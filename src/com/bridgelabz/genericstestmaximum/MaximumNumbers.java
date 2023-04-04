@@ -2,7 +2,18 @@ package com.bridgelabz.genericstestmaximum;
 
 public class MaximumNumbers {
 
-	public void floatMax(double d, double e, double f) {
+	public static void sMax(String x, String y, String z) {
+		String max = x;
+		if (y.compareTo(max) > 0) {
+			max = y;
+		}
+		if (z.compareTo(max) > 0) {
+			max = z;
+		}
+		System.out.println(max);
+	}
+
+	public static void fMax(double d, double e, double f) {
 		Double max = d;
 		if (Double.compare(e, max) > 0.0) {
 			max = e;
@@ -13,7 +24,7 @@ public class MaximumNumbers {
 		System.out.println(max);
 	}
 
-	public void intMax(int a, int b, int c) {
+	public static void iMax(int a, int b, int c) {
 
 		int max = a;
 
@@ -28,8 +39,8 @@ public class MaximumNumbers {
 
 	public static void main(String[] args) {
 
-		MaximumNumbers maximumNumbers = new MaximumNumbers();
-		maximumNumbers.intMax(20, 30, 10);
-		maximumNumbers.floatMax(2.5, 1.0, 5.0);
+		iMax(20, 30, 10);
+		fMax(2.5, 1.0, 5.0);
+		sMax("apple", "banana", "orange");
 	}
 }
