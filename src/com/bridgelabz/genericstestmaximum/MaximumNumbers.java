@@ -23,7 +23,12 @@ public class MaximumNumbers<M extends Comparable<M>> {
 		if (c.compareTo(max) > 0) {
 			max = c;
 		}
+		printMax(a, b, c, max);
 		return max;
+	}
+
+	public static <M> void printMax(M a, M b, M c, M max) {
+		System.out.println("a value is: " + a + ", b value is: " + b + ", c value is: " + c + ", max of three value is: " + max);
 	}
 
 	public static void main(String[] args) {
