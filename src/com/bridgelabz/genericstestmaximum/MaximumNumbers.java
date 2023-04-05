@@ -5,17 +5,17 @@ public class MaximumNumbers<M extends Comparable<M>> {
 	private M a;
 	private M b;
 	private M c;
+	private M max;
 
 	public MaximumNumbers(M a, M b, M c) {
 		super();
 		this.a = a;
 		this.b = b;
 		this.c = c;
+		this.max = a;
 	}
 
 	public M max() {
-
-		M max = a;
 
 		if (b.compareTo(max) > 0) {
 			max = b;
